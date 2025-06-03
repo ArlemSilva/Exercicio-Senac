@@ -7,7 +7,7 @@ contador = 1
 
 try:
     while contador <= 5:
-        nome = input('Digite o nome: ')
+        nome = input('Digite o nome: ').upper()
         if nome.isalpha() and nome not in lista:
             lista.append (nome)
             contador += 1      
@@ -18,11 +18,11 @@ except:
     print()
   
 
-    print(lista)
+print(lista)
 
 while True:
     try: 
-        remover = input('Qual o nome que voce retira da lista? ')
+        remover = input('Qual o nome que voce retira da lista? ').upper()
 
         if remover in (lista):
             lista.remove(remover)

@@ -18,7 +18,7 @@ print(f'A Media das notas é {media}')
 
 notas.sort()
 
-print(f'A menor nota é {notas[0]} e a maior nota é {notas[4]} ')
+print(f'A menor nota é {min(notas)} e a maior nota é {max(notas)} ')
 
 print('As notas acima da media são: ')
 print([n for n in notas if n > media])
